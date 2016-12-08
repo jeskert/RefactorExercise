@@ -1,9 +1,6 @@
 import java.util.Enumeration;
 import java.util.Vector;
 
-/**
- * Created by wyli on 16/12/7.
- */
 public class Customer {
 
     private String _name;
@@ -67,13 +64,5 @@ public class Customer {
             result += each.getFrequentRenterPoints();
         }
         return result;
-    }
-
-    public static void main(String[] args) {
-        Customer customer = new Customer("jeskert");
-        Movie movie = new Movie("Titanic", 20);
-        Rental rental = new Rental(movie, 5);
-        customer.addRental(rental);
-        System.out.println(customer.htmlStatement());
     }
 }
