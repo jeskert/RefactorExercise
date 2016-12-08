@@ -1,4 +1,4 @@
-import org.omg.CORBA.DATA_CONVERSION;
+package main.rental;
 
 abstract class Price {
     abstract int getPriceCode();

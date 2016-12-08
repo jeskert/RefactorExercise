@@ -1,3 +1,5 @@
+package main.rental;
+
 public class Movie {
 
     public static final int CHILDRENS = 2;
@@ -28,7 +30,7 @@ public class Movie {
                 _price = new NewReleasePrice();
                 break;
             default:
-                throw new IllegalArgumentException("Incorrect Price Code");
+                throw new IllegalArgumentException("Incorrect main.rental.Price Code");
         }
     }
 

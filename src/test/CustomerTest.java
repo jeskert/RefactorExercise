@@ -1,3 +1,6 @@
+import main.rental.Customer;
+import main.rental.Movie;
+import main.rental.Rental;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -15,7 +18,7 @@ public class CustomerTest {
     @Test
     public void statement() throws Exception {
         Customer customer = dummyCustomer();
-        assertEquals(customer.statement(), "Rental Records for jeskert\n" +
+        assertEquals(customer.statement(), "main.rental.Rental Records for jeskert\n" +
                 "\tTitanic\t4.5\n" +
                 "Amount owed is 4.5\n" +
                 "You earned 1 frequent renter points");

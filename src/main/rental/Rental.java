@@ -1,3 +1,5 @@
+package main.rental;
+
 public class Rental {
 
     Movie _movie;

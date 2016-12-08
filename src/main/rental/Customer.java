@@ -1,3 +1,5 @@
+package main.rental;
+
 import java.util.Enumeration;
 import java.util.Vector;
 
@@ -22,7 +24,7 @@ public class Customer {
         double totalAmount = 0;
         int frequentRenterPoints = 0;
         Enumeration rentals = _rentals.elements();
-        String result = "Rental Records for " + getName() + "\n";
+        String result = "main.rental.Rental Records for " + getName() + "\n";
         while (rentals.hasMoreElements()) {
             Rental each = (Rental)rentals.nextElement();
             result += "\t" + each.getMovie().getTitle() + "\t" + String.valueOf(each.getCharge()) + "\n";
